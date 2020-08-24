@@ -1,0 +1,44 @@
+{
+  "name": "bloggify-sequelize-datatable-views",
+  "description": "Visualize Sequelize data in data tables.",
+  "keywords": [
+    "bloggify",
+    "sequelize",
+    "datatable",
+    "views",
+    "visualize",
+    "data",
+    "in",
+    "tables"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
+  "homepage": "https://github.com/IonicaBizau/bloggify-sequelize-datatable-views#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "scripts/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/bloggify-sequelize-datatable-views.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/bloggify-sequelize-datatable-views/issues"
+  }
+}
