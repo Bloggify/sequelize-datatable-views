@@ -8,8 +8,30 @@ Visualize Sequelize data in data tables.
 When using this plugin, the `Bloggify.partials.datatable_view` will be
 available and will require the following parameters:
 
-    - `columns` (Array of Strings): The table headers. If you need special actions, you can pass HTML.
-    - `name` (String): The model name (e.g. `users`)
+  - `columns` (Array of Strings): The table headers. If you need special actions, you can pass HTML.
+  - `name` (String): The model name (e.g. `users`)
+
+**Example**:
+
+```html
+<div class="bg-light p-3 rounded mt-5 table-responsive">
+    <%
+        include(Bloggify.partials.datatable_view, {
+            columns: [
+                "ID",
+                "Email",
+                "First Name",
+                "Last Name",
+                "Roles",
+                "Actions",
+            ],
+            name: "users"
+        })
+    %>
+</div>
+```
+
+:bulb: Note: You have to initialize the datatables in your own JavaScript code.
 
 ### `tableDraw(headers, models, options)`
 Generates the action to draw the table.
