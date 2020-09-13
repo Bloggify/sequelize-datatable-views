@@ -100,6 +100,7 @@ available and will require the following parameters:
 
   - `columns` (Array of Strings): The table headers. If you need special actions, you can pass HTML.
   - `name` (String): The model name (e.g. `users`)
+  - `type` (String): The table type (`default` | `compact`)
 
 **Example**:
 
@@ -115,7 +116,8 @@ available and will require the following parameters:
                 "Roles",
                 "Actions",
             ],
-            name: "users"
+            name: "users",
+            type: "compact" // or "default"
         })
     %>
 </div>
