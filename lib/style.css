@@ -1,0 +1,9 @@
+/* Table Small */
+table.table.table-sm {
+    font-size: 12px;
+}
+
+table.table.table-sm .btn-sm {
+    font-size: 10px;
+    padding: 3px 10px;
+}
