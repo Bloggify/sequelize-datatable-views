@@ -155,7 +155,12 @@ Assets.tableDraw = Bloggify.services.utils.tableDraw([
         null, null,
         // This will resolve into an object with these fields
         [ "edit_url", "delete_url" ]
-    ]
+    ],
+    beforeQuery (ctx, findQuery) {
+       // For example, restrict the results
+       // to a specific user id
+       findQuery.where.userId = ctx.user.id
+    }
 })
 ```
 
