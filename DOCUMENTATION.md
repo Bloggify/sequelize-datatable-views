@@ -35,7 +35,7 @@ available and will require the following parameters:
 
 :bulb: Note: You have to initialize the datatables in your own JavaScript code.
 
-### `tableDraw(headers, models, options)`
+tableDraw
 Generates the action to draw the table.
 
 ```js
@@ -100,10 +100,13 @@ The above will resolve to the following:
 #### Params
 
 - **Array** `headers`: The column names the table has.
-- **Object** `models`: An object containing:
+- **object** `models`: An object containing:
      - `base` (Model): The base model.
      - `include` (Array of Models): The models to include (for join).
-- **Object** `options`: Additional querying options:
+- **object** `options`: Additional querying options:
      - `searchFields` (Array): The column names you want to enable searching for.
      - `output` (Array): An array of column names, `null` (for empty output) and array (for object output) elements.
+
+#### Return
+- **Function** The action to draw the table.
 
